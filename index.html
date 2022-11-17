@@ -60,10 +60,10 @@
     </nav>
     <main>
       <div class="goto">
-        <button class="buttonsMP" onclick="play.html" id="play">PLAY</button>
+        <button class="buttonsMP" id="play">PLAY</button>
       </div>
       <div class="goto">
-        <button class="buttonsMP" onclick="more.html" id="about">MORE</button>
+        <button class="buttonsMP" id="about">MORE</button>
       </div>
       <div class="goto">
         <button class="buttonsMP" id="exit">EXIT</button>
@@ -77,6 +77,16 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script>
+      play.onclick = function () {
+        location.href = "play.html";
+      };
+      about.onclick = function () {
+        location.href = "more.html";
+      };
+      exit.onclick = function () {
+        location.href = "more.html";
+      };
+    </script>
   </body>
 </html>

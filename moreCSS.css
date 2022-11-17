@@ -1,6 +1,9 @@
-body {
-    height: 100vh;
+html {
     width: 100vw;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
     /* background-image: url('boomerBECbk.png'); */
     background-image: url('boomerBECbk.png');
     background-repeat: no-repeat;
@@ -10,11 +13,11 @@ body {
     margin: 0;
     font-family: DePixel;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color:#3e465b ;
 }
 p {
-    padding-left: 5vh;
+    margin:0;
 }
 #wdywtk {
     padding: 4vh 1vh;
@@ -23,6 +26,7 @@ p {
     align-content: center;
     text-align: center;
     size: 3vh;
+    
 }
 .hello, #begin {
     height: 25vh;
@@ -32,8 +36,9 @@ p {
     /* justify-content: space-between; */
     padding: 0;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    /* position:fixed ; */
+    bottom: 0vh;
+    /* left: 0; */
     font-family: DePixel;
     font-size: xx-large;
     border: solid #d29a82 0.5vh;
@@ -41,6 +46,7 @@ p {
     background-color: #3e465b;
     /* box-sizing: content-box; */
 }
+
 .response {
     width: 100%;
     height: 25vh;
@@ -115,13 +121,57 @@ p {
     border-radius: 50%;
     border: #d29a82 solid 0.5vh;
 }
+#a5 {
+    height: auto;
+    background-image: url("bk_v3.jpg");
+    
+    background-repeat: repeat;
+    text-align: center;
+}
 .coreTeam {
-    width: 50%;
-    align-self: center;
+    height: 50vh;
+    width: 20vw;
+    /* background-image: url("ctCard.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-p {
+.coreTeam:hover {
+    background-image: none;
+}
+.character {
+    height: 20vh;
+    position: absolute;
+    top: -3vh;
+}
+#masnita {
+    background-image: url("masnitaCard.png");
+}
+#leo {
+    background-image: url("leoCard.png");
+}
+#trifu {
+    background-image: url("trifuCard.png");
+}
+#armand {
+    background-image: url("armandCard.png");
+}
+#recea {
+    background-image: url("receaCard.png");
+}
+#daria {
+    background-image: url("dariaCard.png");
+}
+#bianca {
+    background-image: url("biancaCard.png");
+}
+#robert {
+    background-image: url("robertCard.png");
+}
+
+/* p {
     margin: 1vh 0;
-}
+} */
 @media (max-width:500px) {
 
     #begin, .hello {

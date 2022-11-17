@@ -2,14 +2,15 @@ body {
     height: 100vh;
     font-family: DePixel;
     background-color:#3e465b ;
-}
-main {
     background-image: url("wallpaperMP.png");
-    height: 90vh;
-    /* margin-top: 10vh; */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    overflow: hidden;
+}
+main {
+    height: 90vh;
+    /* margin-top: 10vh; */
     /* background-position-y: 10vh; */
     display: flex;
     flex-direction: column;
@@ -53,19 +54,19 @@ a:hover {
     color: black;
 }
 .buttonsMP {
-    width: 14vh;
-    height:7vh;
+    width: 24vh;
+    height: 10vh;
     font-size: 3vh;
     margin-bottom: 5vh;
-    background-image: url("normalButton.png");
+    background-image: url("longButton.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     padding: 0;
     text-decoration: black;
 }
 #play:hover, #about:hover, #exit:hover {
-    background-image: url("pushedButton.png");
+    background-image: url("longButtonPushed.png");
     background-position:center;
     background-size:cover ;
     height: 6.1vh;

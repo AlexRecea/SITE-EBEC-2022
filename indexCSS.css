@@ -17,6 +17,8 @@ main {
     justify-content: flex-end;
     align-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 5vh;
     /* margin-bottom: 5vh; */
 }
 nav {
@@ -54,22 +56,22 @@ a:hover {
     color: black;
 }
 .buttonsMP {
-    width: 24vh;
-    height: 10vh;
+    width: 17vh;
+    height: 7.9vh;
     font-size: 3vh;
     margin-bottom: 5vh;
     background-image: url("longButton.png");
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: 18vh 8.1vh;
     padding: 0;
     text-decoration: black;
 }
 #play:hover, #about:hover, #exit:hover {
     background-image: url("longButtonPushed.png");
     background-position:center;
-    background-size:cover ;
-    height: 6.1vh;
+    background-size:18vh 7.7vh ;
+    height: 6.5vh;
     margin-top: 0.9vh;
 }
 .goto {

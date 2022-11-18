@@ -30,6 +30,7 @@ body {
     /* background-color: white; */
 }
 .buttonMP:hover {
+    /* background-color: #d29a82; */
     background-image: url("longButtonPushed.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +39,11 @@ body {
 p {
     font-size: 3.5vh;
 }
-
+mark {
+    background-color: #3e465b;
+    border: #d29a82 solid 0.3vh;
+    color: #e5b588;
+}
 @media (max-width: 576px) {
     .buttonMP {
         height: 12vh;

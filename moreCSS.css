@@ -5,10 +5,7 @@ body {
     min-height: 100vh;
     width: 100%;
     /* background-image: url('boomerBECbk.png'); */
-    background-image: url('boomerBECbk.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     /* background-size: 80%; */
     margin: 0;
     font-family: DePixel;
@@ -28,6 +25,13 @@ p {
     size: 3vh;
     
 }
+#bigBegin {
+    height: 100vh;
+    background-image: url('boomerBECbk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .hello, #begin {
     height: 25vh;
     width: 100%;
@@ -40,13 +44,17 @@ p {
     bottom: 0vh;
     /* left: 0; */
     font-family: DePixel;
-    font-size: xx-large;
+    font-size:xx-large;
     border: solid #d29a82 0.5vh;
     box-sizing: content-box;
     background-color: #3e465b;
+    color: white;
     /* box-sizing: content-box; */
 }
-
+.info {
+    font-size: large;
+    padding: 2vw 1vh;
+}
 .response {
     width: 100%;
     height: 25vh;
@@ -74,6 +82,10 @@ p {
     font-size: 3vh;
     font-weight: bold;
 }
+#y-bec {
+    height: 100vh;
+    /* width: 100%; */
+}
 #menu1, #menu2 {
     height: 40vh;
     width: 100vw;
@@ -87,6 +99,7 @@ p {
     justify-content: center;
     border: solid #d29a82 0.5vh;
     background-color: #3e465b   ;
+    /* overflow: visible; */
     /* font-family: DePixel; */
     font-size: 5vh;
     box-sizing:border-box;
@@ -103,10 +116,14 @@ p {
     font-size: 0.7em;
     font-weight: bold;
     align-self: baseline;
-    border-radius: 30%;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    background-color: #343b4e;
+    color: white;
+    /* border-radius: 30%; */
 }
 .but:hover{
-    background-color: aqua;
+    background-color: #8c4e39;
 }
 /* .stack {
     display: flex;
@@ -129,8 +146,8 @@ p {
     text-align: center;
 }
 .coreTeam {
-    height: 50vh;
-    width: 20vw;
+    height: 60vh;
+    /* width: 20vw; */
     /* background-image: url("ctCard.png"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -172,8 +189,13 @@ p {
 /* p {
     margin: 1vh 0;
 } */
-@media (max-width:500px) {
-
+@media (max-width:576px) {
+    #bigBegin {
+    background-image: url('phoneBoomer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
     #begin, .hello {
         height: 20vh;
         width: 97.5vw;
@@ -188,6 +210,17 @@ p {
         box-sizing:border-box;
 
     }
+    .hello {
+        top: 50vh;
+        height: 60vh;
+        justify-content: flex-start;
+        box-sizing: content-box;
+    }
+    .info {
+        font-size: 2vh;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
     .robo {
         position: absolute;
         top: -20vh;
@@ -198,7 +231,7 @@ p {
         font-weight: bold;
     }
     #click {
-        bottom: -0.5vh;
+        bottom: 0.5vh;
         right: 4vh;
         font-size: 2vh;
     }
@@ -206,25 +239,33 @@ p {
         height: 12vh;
         margin-bottom: 2vh;
         width: 100%;
+        /* background-image: url("noBkBorder.png");
+        background-repeat: no-repeat;
+        background-size: 100% 10vh; */
+        background-image: none;
+    }
+    #begin {
+        border: none;
         background-image: url("noBkBorder.png");
         background-repeat: no-repeat;
-        background-size: 100% 10vh;
+        background-position: center;
+        background-size: 100% 17vh;
     }
     .but {
-        height: 8vh;
+        height: 6.5vh;
         width: 99%;
         font-size: 0.4em;
         align-self: center;
     }
     #menu1, #menu2 {
-        height: 46vh;
+        height: 40vh;
         width: 100%;
         position: absolute;
         bottom: 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
-        box-sizing: border-box;
+        box-sizing:content-box;
         /* padding-top: 5vh; */
     }
     .stack {
@@ -248,5 +289,10 @@ p {
         background-image: url("phoneSchedule.png");
         height: 60vh;
         width: 90%;
+    }
+    #ybec {
+        background-image: url("phoneY-bec.png");
+        background-position: center;
+        background-size: cover;
     }
 }

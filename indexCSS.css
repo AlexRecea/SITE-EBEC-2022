@@ -79,7 +79,7 @@ a:hover {
     margin-bottom: 3vh;
     outline: none;
 }
-@media (max-width:500px){
+@media (max-width:576px){
     main {
         height: 92vh;
         background-image: url("wallpaperMPphone.png");

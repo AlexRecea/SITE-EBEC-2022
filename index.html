@@ -58,7 +58,7 @@
         <img class="ut" src="ut_logo_crem.png" alt="" />
       </a> -->
     </nav>
-    <main>
+    <!-- <main>
       <div class="goto">
         <button class="buttonsMP" id="play">PLAY</button>
       </div>
@@ -66,9 +66,25 @@
         <button class="buttonsMP" id="about">MORE</button>
       </div>
       <div class="goto">
-        <button class="buttonsMP" id="exit">EXIT</button>
+        <button class="buttonsMP" id="colaborators">COLABORATORS</button>
       </div>
-      <!-- <input type="button" onclick="more.html" value="" /> -->
+      <div class="goto">
+        <button class="buttonsMP" id="contact">CONTACT</button>
+      </div>
+    </main> -->
+    <main>
+      <div class="buttonsMP" id="play">
+        <p>PLAY</p>
+      </div>
+      <div class="buttonsMP" id="about">
+        <p>MORE</p>
+      </div>
+      <div class="buttonsMP" id="comp">
+        <p>COLAB</p>
+      </div>
+      <div class="buttonsMP" id="contact">
+        <p>CONTACT</p>
+      </div>
     </main>
     <footer></footer>
     <!-- JavaScript Bundle with Popper -->
@@ -84,8 +100,8 @@
       about.onclick = function () {
         location.href = "more.html";
       };
-      exit.onclick = function () {
-        location.href = "more.html";
+      comp.onclick = function () {
+        location.href = "colab.html";
       };
     </script>
   </body>
